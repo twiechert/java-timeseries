@@ -157,7 +157,7 @@ public class ArimaCoefficients {
      *
      * @return the autoregressive coefficients.
      */
-    final double[] arCoeffs() {
+    public final double[] arCoeffs() {
         return arCoeffs.clone();
     }
 
@@ -167,7 +167,7 @@ public class ArimaCoefficients {
      *
      * @return the moving-average coefficients.
      */
-    final double[] maCoeffs() {
+    public final double[] maCoeffs() {
         return maCoeffs.clone();
     }
 
@@ -176,7 +176,7 @@ public class ArimaCoefficients {
      *
      * @return the seasonal autoregressive coefficients.
      */
-    final double[] seasonalARCoeffs() {
+    public final double[] seasonalARCoeffs() {
         return sarCoeffs.clone();
     }
 
@@ -185,7 +185,7 @@ public class ArimaCoefficients {
      *
      * @return the seasonal moving-average coefficients.
      */
-    final double[] seasonalMACoeffs() {
+    public final double[] seasonalMACoeffs() {
         return smaCoeffs.clone();
     }
 
@@ -194,7 +194,7 @@ public class ArimaCoefficients {
      *
      * @return the degree of non-seasonal differencing.
      */
-    final int d() {
+    public final int d() {
         return d;
     }
 
@@ -203,11 +203,11 @@ public class ArimaCoefficients {
      *
      * @return the degree of seasonal differencing.
      */
-    final int D() {
+    public final int D() {
         return D;
     }
 
-    final int seasonalFrequency() {
+    public final int seasonalFrequency() {
         return this.seasonalFrequency;
     }
 
@@ -216,11 +216,11 @@ public class ArimaCoefficients {
      *
      * @return the model mean.
      */
-    final double mean() {
+    public final double mean() {
         return mean;
     }
 
-    final double drift() {
+    public final double drift() {
         return drift;
     }
 
@@ -231,7 +231,7 @@ public class ArimaCoefficients {
      *
      * @return the model intercept term.
      */
-    final double intercept() {
+    public final double intercept() {
         return this.intercept;
     }
 
